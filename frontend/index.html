@@ -154,7 +154,8 @@ greet('World')"></textarea>
         <!-- API URL -->
         <div class="api-url-row">
           <span class="api-label">API</span>
-          <input type="text" id="apiUrl" value="http://localhost:8000" class="api-input" />
+          <input type="text" id="apiUrl" value="" placeholder="Auto-detected" class="api-input" />
+          <span id="engineBadge" class="engine-badge unknown" title="Backend engine status">Engine: Unknown</span>
           <div id="statusDot" class="status-dot offline" title="Connection status"></div>
         </div>
 
@@ -206,7 +207,7 @@ greet('World')"></textarea>
     </div>
     <div class="footer-right">
       <a href="https://github.com/imDarshanGK/AI-dev-assistant" target="_blank">GitHub</a>
-      <a href="http://localhost:8000/docs" target="_blank">API Docs</a>
+      <a id="apiDocsLink" href="/docs" target="_blank">API Docs</a>
     </div>
   </footer>
 
